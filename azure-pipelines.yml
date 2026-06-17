@@ -3,6 +3,7 @@ trigger:
 - main
 schedules:
     - cron: '* * * * *'
+      always: true
       branches:
           include:
               - main
