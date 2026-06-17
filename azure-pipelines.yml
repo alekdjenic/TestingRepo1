@@ -1,6 +1,11 @@
 #//TESTING COMMENT HERE SOMETHING SOMETHING one more test
 trigger:
 - main
+schedules:
+    - cron: '* * * * *'
+      branches:
+          include:
+              - main
 pool: default
 steps:
 - script: echo Hello from relay test
